@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(243, 221, 243);
+    margin: 0;
+    height: 100%;
+}
+
+h1{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    padding: 0;
+    height: 4rem;
+}
+
+header .logo{
+    margin: 0;
+}
+
+header nav{
+    width: 80%;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: .5rem 0;
+    justify-content: space-around;
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li a{
+    color: white;
+    text-decoration:none;
+    padding:5px 10px;
+}
+
+.menu li:hover{
+    border-bottom: solid 2px white;
+    transition: all 0.1s ease-out;
+}
+
+.menu li a::selection{
+    background-color: white;
+    color: white;
+}
+
+.main{
+    width: 100%;
+}
+
+.main .banner{
+    background-image: linear-gradient(45deg, rgba(221, 195, 109, 0.39), rgba(193, 110, 1, 0.384)), url(img/banner.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.main .banner h1{
+    height: 100%;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.main .sobre {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.main .sobre h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.sobre .pessoas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre .pessoas .pessoa{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+.pessoa img{
+    width: 100%;
+    background-size: cover;
+}
+
+.pessoa .info{
+    text-align: center;
+    padding: 2px;
+    margin-top: 10px;
+    background-color: brown;
+    color: #fff;
+}
+.pessoa .descricao{
+    padding: 0 1rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    background-color: brown;
+    text-align: justify;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.sobre .pessoas .pessoa:hover .descricao{
+    transform: translateY(0);
+}
+
+.main .cards{
+    margin-top: 40px;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.cards .card{
+    display: flex;
+    padding: 5px;
+    width: 60%;
+    height: 210px;
+}
+.cards .card img{
+    background-size: cover;
+    height: 100%;
+}
+.cards .card button{
+    width: 100%;
+    font-size: 16px;
+    background-color: brown;
+    border: 0px;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+}
+.cards .card button:hover{
+    background-color: rgb(121, 26, 26);
+    box-shadow: 2px 2px grey;
+    transition: 0.3s;
+}
+
+.cards .card-inclusiva{
+    float: left;
+}
+.cards .card-especial{
+    margin-top: 40px;
+    float: right;
+}
+
+.cards .card-inclusiva .card-text{
+    margin-left: 10px;
+}
+.cards .card-especial .card-text{
+    margin-right: 10px;
+}
+.cards .card .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards .card-text h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+}
+.cards .card .card-text p{
+    text-align: justify;
+}
+.cards .card-especial .card-text h3{
+    text-align: right;
+}
+
+.pessoa ::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: rgb(161, 92, 92);
+    border-left: 1px solid rgb(161, 92, 92);
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgb(105, 18, 18);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(126, 53, 53);
+}
