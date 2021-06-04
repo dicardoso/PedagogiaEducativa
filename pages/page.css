@@ -1,0 +1,38 @@
+.main .banner{
+    background-image: linear-gradient(45deg, rgba(221, 195, 109, 0.39), rgba(193, 110, 1, 0.384)), url(../img/image3.png) !important;
+    background-size: cover;
+    height: 350px !important;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.conteudo{
+    margin: auto;
+    width: 90%;
+}
+
+.conteudo p{
+    padding: 0 2rem;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.conteudo .ponto{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.conteudo .texto-ponto{
+    padding: 0 2rem 0 4rem;
+    margin-top: 5px;
+}
+
+.conteudo .box{
+    display: flex;
+}
+
+.conteudo .box .right img{
+    height: 100%;
+    width: 350px;
+    object-fit: cover;
+}
