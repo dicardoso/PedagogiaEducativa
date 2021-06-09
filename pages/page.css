@@ -1,7 +1,7 @@
 .main .banner{
     background-image: linear-gradient(45deg, rgba(221, 195, 109, 0.39), rgba(193, 110, 1, 0.384)), url(../img/image3.png);
     background-size: cover;
-    height: 350px !important;
+    height: 450px !important;
     width: 100%;
     background-attachment: fixed;
 }
@@ -13,6 +13,7 @@
 
 .conteudo p{
     font-family: 'Luthier', sans-serif;
+    line-height: 20px;
     padding: 0 2rem;
     text-align: justify;
     font-size: 18px;
@@ -22,6 +23,7 @@
 }
 
 .conteudo .ponto{
+    letter-spacing: 5px;
     font-weight: bold;
     margin-bottom: 0;
 }
