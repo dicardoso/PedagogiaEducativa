@@ -47,6 +47,16 @@
     object-fit: cover;
 }
 
+.conteudo .top{
+    width: 100%;
+}
+
+.conteudo .top img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 @media (max-width: 800px) {
     .conteudo .box{
         flex-direction: column-reverse;
