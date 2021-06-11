@@ -41,10 +41,22 @@ header .logo{
 header nav{
     width: 80%;
 }
+@media (max-width: 650px){
+    .sobre{
+        height: 520px !important;
+    }
+    .sobre .pessoas{
+        height: 450px !important;
+    }
+}
 
 @media (max-width: 800px){
     header{
-        height: 13rem;
+        height: 20rem;
+    }
+    .main .banner h1{
+        font-size: 50px !important;
+        text-align: center;
     }
     .menu{
         flex-direction: column;
@@ -55,10 +67,26 @@ header nav{
     }
     .menu li{
         margin: 2px 0;
-        padding: 2px 0;
+        padding: 10px 0;
         background-color: rgba(0, 0, 0, 0.473);
         border-radius: 2px;
-    }    
+    }
+    .main .cards{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr;
+        margin-right: 0; 
+    }
+
+    .main .cards .card{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main .cards .card img{
+        height: 250px;
+        object-fit: cover;
+    }
 }
 .menu {
     display: flex;
@@ -172,20 +200,25 @@ header nav{
 }
 
 .main .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-top: 40px;
     justify-content: space-around;
     padding: 0 1rem;
+    height: 100%;
 }
 
 .cards .card{
     display: flex;
+    flex-direction: column;
     padding: 5px;
-    width: 60%;
-    height: 210px;
+    width: 90%;
 }
 .cards .card img{
     background-size: cover;
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .cards .card button{
     width: 100%;
@@ -202,20 +235,6 @@ header nav{
     transition: 0.3s;
 }
 
-.cards .card-inclusiva{
-    float: left;
-}
-.cards .card-especial{
-    margin-top: 40px;
-    float: right;
-}
-
-.cards .card-inclusiva .card-text{
-    margin-left: 10px;
-}
-.cards .card-especial .card-text{
-    margin-right: 10px;
-}
 .cards .card .card-text{
     display: flex;
     flex-direction: column;
@@ -231,8 +250,9 @@ header nav{
     font-size: 20px;
     text-align: justify;
 }
-.cards .card-especial .card-text h3{
-    text-align: right;
+.cards .card-text h3{
+    text-align: center;
+    margin-top: 10px;
 }
 
 .pessoa ::-webkit-scrollbar {
