@@ -336,8 +336,7 @@ header nav{
     font-size: 18px;
     line-height: 25px;
 }
-.box .filme .titulo{
-}
+
 * Fundo da barra de rolagem */
 ::-webkit-scrollbar-track-piece {
     background-color: rgb(161, 92, 92);
