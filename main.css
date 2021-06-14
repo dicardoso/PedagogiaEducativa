@@ -87,6 +87,15 @@ header nav{
         height: 250px;
         object-fit: cover;
     }
+
+    .curiosidades .curiosidade{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .box .filme{
+        grid-template-columns: 1fr !important;
+    }
 }
 .menu {
     display: flex;
@@ -139,13 +148,12 @@ header nav{
     text-shadow: 2px 2px black;
 }
 
-.main .sobre {
+.main .section {
     background-color: white;
     padding-top: 10px;
-    height: 500px;
 }
 
-.main .sobre h2{
+.main .section h2{
     text-align: center;
     font-weight: bold;
     font-size: 32px;
@@ -205,8 +213,8 @@ header nav{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 40px;
-    justify-content: space-around;
-    padding: 0 1rem;
+    justify-content: center;
+    padding: 0 1rem 2rem 1rem;
     height: 100%;
 }
 
@@ -215,6 +223,7 @@ header nav{
     flex-direction: column;
     padding: 5px;
     width: 90%;
+    margin: auto;
 }
 .cards .card img{
     background-size: cover;
@@ -255,12 +264,81 @@ header nav{
     text-align: center;
     margin-top: 10px;
 }
+.curiosidades h3{
+    font-size: 23px;
+    text-align: center;
+}
+
+.curiosidades{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.curiosidade{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.curiosidade .card{
+    font-family: 'Luthier', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.curiosidade .card ol{
+    padding: 0 25px;
+    margin: 0;
+}
 
 .pessoa ::-webkit-scrollbar {
     width: 12px;
 }
 
-/* Fundo da barra de rolagem */
+.filmes h2{
+    font-size: 32px;
+}
+
+.filmes h2, .filmes h3{
+    text-align: center;
+}
+
+.box .filme{
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 6fr;
+    width: 100%;
+}
+
+.box .filme img{
+    grid-row: 1/3;
+    height: 300px;
+    width: 200px;
+    background-size: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.filme .titulo{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.filme .sinopse{
+    font-family: 'Luthier', sans-serif;
+    text-align: justify;
+    padding: 0 25px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.box .filme .titulo{
+}
+* Fundo da barra de rolagem */
 ::-webkit-scrollbar-track-piece {
     background-color: rgb(161, 92, 92);
     border-left: 1px solid rgb(161, 92, 92);
