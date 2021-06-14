@@ -362,6 +362,7 @@ header nav{
     color: brown;
 }
 footer{
+    border-top: solid 2px white;
     padding: 20px 0;
 }
 
